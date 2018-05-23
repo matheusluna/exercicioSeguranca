@@ -1,7 +1,7 @@
 butao.onclick = function() {
   var txt = texto.value;
   txt = txt.replace("\n", " ");
-  txt = txt.replace(/\.|\,|\(|\)|\?|\:|\; /g, "");
+  txt = txt.replace(/\.|\,|\(|\)|\?|\:|\;|\- /g, " ");
   var palavras = txt.split(" ");
   var lista = [];
   for (var a = 0; a < palavras.length; a++) {
